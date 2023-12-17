@@ -38,18 +38,18 @@ class _SignUpFormState extends State<SignUpForm> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          TextField(
+          TextFormField(
             controller: nameController,
             decoration: const InputDecoration(labelText: 'Name'),
           ),
           const SizedBox(height: 16.0),
-          TextField(
+          TextFormField(
             controller: emailController,
             keyboardType: TextInputType.emailAddress,
             decoration: const InputDecoration(labelText: 'Email'),
           ),
           const SizedBox(height: 16.0),
-          TextField(
+          TextFormField(
             controller: passwordController,
             obscureText: true,
             decoration: const InputDecoration(labelText: 'Password'),
